@@ -12,13 +12,22 @@ export const Month_Transion = () => {
                 borderColor: "gray.400",
                 fontWeight: "bold",
                 fontSize: "lg",
-                padding: 4,
+                padding: 4,                
                 position: "sticky",
                 bg: "gray.200",
-                gap: 200,
+                gap: 40,
             })}
         >
-            <span>前の月</span>
+            <span
+                className={css({
+                    _hover: {
+                        cursor: "pointer",
+                        color: "blue.500",
+                    }
+                })}
+            >
+                前の月
+            </span>
             <div
                 className={css({
                     gap: 4,
@@ -38,7 +47,16 @@ export const Month_Transion = () => {
                     <span>Aug</span>
                 </div>
             </div>
-            <span>次の月</span>
+            <span
+                className={css({
+                    _hover: {
+                        cursor: "pointer",
+                        color: "blue.500",
+                    }
+                })}
+            >
+                次の月
+            </span>
         </div>
     )
 }

@@ -11,10 +11,11 @@
 		"postinstall": "npm run cf-typegen",
 		"preview": "pnpm run build && vite preview",
 		"typecheck": "npm run cf-typegen && react-router typegen && tsc -b",
-        "format": "biome format --write .",
-        "lint": "biome lint"
+		"format": "biome format --write .",
+		"lint": "biome lint"
 	},
 	"dependencies": {
+		"@holiday-jp/holiday_jp": "^2.5.1",
 		"autoprefixer": "^10.4.21",
 		"isbot": "^5.1.27",
 		"react": "^19.1.0",

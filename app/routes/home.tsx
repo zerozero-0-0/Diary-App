@@ -1,8 +1,8 @@
 import type { Route } from "./+types/home";
 import { css } from "styled-system/css";
-import { Button } from "~/utils/Button";
 import { Month_Transion } from "~/components/Month_Transion";
 import { Sidebar } from "~/components/sidebar";
+import { Week_Calendar } from "~/components/Week_Calendar";
 
 export function meta({ }: Route.MetaArgs) {
     return [
@@ -20,9 +20,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
         <div>
             <Sidebar />
             <Month_Transion />
-            <Button>
-                追加
-            </Button>
+            <Week_Calendar />
         </div>
     )
 }
