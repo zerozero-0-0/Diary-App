@@ -6,6 +6,8 @@
 /.react-router/
 /build/
 
+dist/
+
 # Cloudflare
 .mf
 .wrangler
@@ -17,5 +19,5 @@
 !.env.example
 
 ## Panda
-styled-system
+styled-system/
 styled-system-studio
