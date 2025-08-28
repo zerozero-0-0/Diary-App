@@ -12,10 +12,14 @@ const Each_Week_Calendar = ({
 	return (
 		<div
 			className={css({
-				width: "70%",
+				width: "80%",
+                maxWidth: "1200px",
+                mx: "auto",
 				border: "1px solid",
 				borderColor: "gray.400",
 				borderRadius: 16,
+                display: "flex",
+                alignItems: "center",
 			})}
 		>
 			<div
@@ -80,17 +84,31 @@ export const Week_Calendar = () => {
 	const days = getWeekDatesNumbers();
 
 	return (
-		<div
-			className={css({
-				gap: 2,
-				display: "grid",
-			})}
-		>
-			{days.map((day) => (
-				<Each_Week_Calendar key={day.date} bgColor={day.bgColor}>
-					{day.date}
-				</Each_Week_Calendar>
-			))}
-		</div>
+        <div
+            className={css({
+                display: "flex",
+                justifyContent: "center",
+                width: "100%",
+                mx: "auto",
+            })}
+        >
+            <div
+                className={css({
+                    gap: 2,
+                    display: "grid",
+                    width: "80%",
+                    height: "auto",
+                })}
+            >
+                {days.map((day) => (
+                    <Each_Week_Calendar 
+                        key={day.date} 
+                        bgColor={day.bgColor}
+                    >
+                        {day.date}
+                    </Each_Week_Calendar>
+                ))}
+            </div>
+        </div>
 	);
 };
