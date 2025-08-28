@@ -1,6 +1,3 @@
 export const Calendar = () => {
-    return (
-        <header>
-        </header>
-    )
-}
+	return <header></header>;
+};
