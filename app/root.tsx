@@ -19,6 +19,10 @@ export const links: Route.LinksFunction = () => [
   },
   {
     rel: "stylesheet",
+    href: "https://fonts.googleapis.com/icon?family=Material+Icons"
+  },
+  {
+    rel: "stylesheet",
     href: stylesheet
   },
 ];

@@ -19,7 +19,25 @@ export const Month_Transion = () => {
             })}
         >
             <span>前の月</span>
-            <span>8</span>
+            <div
+                className={css({
+                    gap: 4,
+                    display: "flex",
+                    justifyContent: "center",
+                })}
+            >
+                <span>2025</span>
+                <div
+                    className={css({
+                        gap: 2,
+                        display: "flex",
+                    })}
+                >
+                    <span>8</span>
+                    <span>|</span>
+                    <span>Aug</span>
+                </div>
+            </div>
             <span>次の月</span>
         </div>
     )

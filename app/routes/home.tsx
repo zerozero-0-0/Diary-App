@@ -1,7 +1,8 @@
 import type { Route } from "./+types/home";
 import { css } from "styled-system/css";
 import { Button } from "~/utils/Button";
-import { Month_Transion } from "~/utils/Month_Transion";
+import { Month_Transion } from "~/components/Month_Transion";
+import { Sidebar } from "~/components/sidebar";
 
 export function meta({ }: Route.MetaArgs) {
     return [
@@ -17,6 +18,7 @@ export function loader({ context }: Route.LoaderArgs) {
 export default function Home({ loaderData }: Route.ComponentProps) {
     return (
         <div>
+            <Sidebar />
             <Month_Transion />
             <Button>
                 追加
