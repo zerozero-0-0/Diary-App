@@ -1,5 +1,6 @@
 import type { Route } from "./+types/home";
 import { css } from "styled-system/css";
+import { Button } from "~/utils/Button";
 
 export function meta({ }: Route.MetaArgs) {
     return [
@@ -23,6 +24,9 @@ export default function Home({ loaderData }: Route.ComponentProps) {
             >
                 Welcone to the home page
             </h1>
+            <Button>
+                追加
+            </Button>
         </div>
     )
 }
