@@ -1,6 +1,7 @@
 import type { Route } from "./+types/home";
 import { css } from "styled-system/css";
 import { Button } from "~/utils/Button";
+import { Month_Transion } from "~/utils/Month_Transion";
 
 export function meta({ }: Route.MetaArgs) {
     return [
@@ -16,14 +17,7 @@ export function loader({ context }: Route.LoaderArgs) {
 export default function Home({ loaderData }: Route.ComponentProps) {
     return (
         <div>
-            <h1
-                className={css({
-                    fontSize: "2xl",
-                    fontWeight: "bold",
-                })}
-            >
-                Welcone to the home page
-            </h1>
+            <Month_Transion />
             <Button>
                 追加
             </Button>
