@@ -5,7 +5,7 @@ import { css } from "styled-system/css";
 const links = ["月カレンダー", "週カレンダー", "統計", "ポケスリ", "SWGOH"];
 
 export const Sidebar = () => {
-	const [isOpen, setIsOpen] = useState(true);
+	const [isOpen, setIsOpen] = useState(false);
 	const [angle, setAngle] = useState(0);
 
 	const handleClick = () => {
