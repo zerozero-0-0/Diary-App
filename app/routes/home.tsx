@@ -1,5 +1,6 @@
 import type { Route } from "./+types/home";
 import { Welcome } from "../welcome/welcome";
+import { css } from "styled-system/css";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -13,5 +14,11 @@ export function loader({ context }: Route.LoaderArgs) {
 }
 
 export default function Home({ loaderData }: Route.ComponentProps) {
-  return <Welcome message={loaderData.message} />;
+  return (
+    <div>
+        <h1 className={css({ fontSize: "2xl", fontWeight: "bold"})}>
+            Welcome to the home page
+        </h1>
+    </div>
+  )
 }
